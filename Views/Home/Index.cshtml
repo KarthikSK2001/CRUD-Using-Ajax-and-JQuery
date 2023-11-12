@@ -1,0 +1,45 @@
+﻿<div class="row" style="margin:2rem">
+    <input type="hidden" id="txtProductId" />
+
+    <div class="col-md-2">
+        Name
+    </div>
+    <div class="col-md-10">
+        <input type="text" id="txtProductName" placeholder="Enter Product Name" class="form-control" required />
+    </div>
+    <div class="col-md-2">
+        Price
+    </div>
+    <div class="col-md-10">
+        <input type="text" id="txtProductPrice" placeholder="Enter Product Price" class="form-control" required />
+    </div>
+    <div class="col-md-2">
+        Quantity
+    </div>
+    <div class="col-md-10">
+        <input type="text" id="txtProductQuantity" placeholder="Enter Product Quantity" class="form-control" required />
+    </div>
+    <div class="col-md-12">
+        <button class="btn btn-success" onclick="saveProduct()">Save Data</button>
+        <button class="btn btn-danger" onclick="clear()">Reset</button>
+    </div>
+</div>
+
+<div class="row">
+    <table class="table table-bordered table-striped table-responsive">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Quality</th>
+                <th>Active</th>
+                <th>Delete</th>
+                <th>Edit</th>
+            </tr>
+        </thead>
+        <tbody id="tblProductBody">
+        </tbody>
+    </table>
+</div>
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/Content/Scripts/Product.js"></script>
